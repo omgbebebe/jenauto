@@ -27,6 +27,6 @@ job("$basePath/auth") {
       credentials = new BasicSSHUserPrivateKey(CredentialsScope.GLOBAL,null,"root",new BasicSSHUserPrivateKey.UsersPrivateKeySource(),"","")
 
       credentials_store.addCredentials(global_domain, credentials)
-      ''') {classpath='/var/lib/jenkins/third_party/snakeyaml-1.17.jar'}
+      ''') {classpath('/var/lib/jenkins/third_party/snakeyaml-1.17.jar')
     }
 }
